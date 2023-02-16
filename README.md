@@ -45,3 +45,7 @@ JWT_SECRET=<br />
 
 - Dentro de la carpeta /api/src: npx sequelize db:migrate
 
+- El proyecto usa webpack, si hacemos cambios en los webcomponents de la carpeta client, dentro de la misma carpeta /client debemos escribir: npx webpack
+
+- Se debería rellenar las tablas de menu, image_configurations y users
+
