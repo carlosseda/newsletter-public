@@ -1,0 +1,55 @@
+.tabs{
+    background-color: hsl(0, 0%, 84%);
+}
+
+.tabs-container{
+    background-color: hsl(0, 0%, 84%);
+    display: flex;
+    height: 2.5em;
+    justify-content: space-between;
+}
+
+.tabs-container-menu{
+
+    width: 100%;
+
+    ul{
+        height: 2.5em;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        color: hsl(0, 0%, 50%);
+        cursor: pointer;
+        font-weight: 600;
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    li:hover{
+        color: hsl(19, 100%, 50%);
+    }
+
+    li.tab-active,
+    li.tab-active:hover{
+        background-color:hsl(207, 85%, 69%);
+        color: white;
+    }
+}
+
+.tabs-container-buttons{
+
+    display: flex;
+    padding: 0 0.5em;
+}
+
+.tab-panel{
+    display: none;
+}
+
+.tab-panel.tab-active{
+    display: block;
+    padding: 2em 1em;
+}

@@ -1,0 +1,22 @@
+.crud{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.crud-filter{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.crud-table{
+    min-width: 35%;
+    max-width: 35%;
+}
+
+.crud-form{
+    min-width: 60%;
+    max-width: 60%;
+}
+

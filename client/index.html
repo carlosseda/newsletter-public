@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico">
+
+		<title>Título</title>
+		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+        <meta name="keywords" 	 content="palabras clave, separadas, por comas">
+
+        <link href="css/app.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <delete-element-modal-component></delete-element-modal-component>
+        <overlayer-component></overlayer-component>
+        <header>
+            <div class="header-element">
+                <h2>Detectib</h2>
+            </div>
+
+            <div class="header-element">
+                <page-title-component title="Emails"></page-title-component>
+            </div>
+
+            <div class="header-element">
+                <menu-component menu="admin-header"></menu-component>
+            </div>
+        </header>
+
+        <main>
+            <alert-message-component></alert-message-component>
+
+            <div class="crud-filter">
+                <table-filter url="/api/admin/emails"></table-filter>
+            </div>
+
+            <div class="crud">
+                <div class="crud-table">
+                    <table-component url="/api/admin/emails"></table-component>
+                </div>
+
+                <div class="crud-form">
+                    <form-builder url="/api/admin/emails"></form-builder>
+                </div>
+            </div> 
+        </main>
+
+        <footer></footer>
+           
+        <script type="module" src="dist/index.js"></script>
+    </body>
+</html>

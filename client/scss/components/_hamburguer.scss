@@ -1,0 +1,183 @@
+.hamburguer__button{
+
+    background: none;
+    border: none;
+	color: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: inherit;
+    padding: 0;
+    position: relative;
+    text-indent: -9999px;
+    width: 2rem;
+
+    @include respond-to("lg") {
+        width: 3rem;
+    }
+
+    &:before, &:after,
+    span:before, span:after{
+        background-color: $white;
+        border-radius: 15px;
+        content: "";
+        display: block;
+        height: 7.5%;
+        opacity: 1;
+        position: absolute;
+        transition: ease-in-out all 0.15s;
+        width: 100%;
+    }
+
+    &:before{
+        top: 30%;
+    }
+
+    &:after{
+        bottom: 30%;
+    }
+
+    span:before, span:after{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &.--active:before, &.--active:after{
+        display: none;
+    }
+
+    &.--active span:before{
+        transform: rotate(45deg);
+    }
+
+    &.--active span:after{
+        transform: rotate(-45deg);
+    }
+}
+
+.hamburguer__menu{
+
+    border-bottom: 0.5rem solid $color-primary;
+    left: 5%;
+    position: fixed;
+    top: -80vh;
+    transition: top 0.3s;
+    width: 40%;
+    z-index: 1000;
+
+    @include respond-to("lg") {
+        left: 20%;
+        width: 20%;
+    }
+
+    &.--active{
+
+        top: 31vh;
+
+        @include respond-to("lg") {
+            top: 21vh;
+        }
+    }
+
+    .hamburguer__menu-search{
+
+        background-color: $black-brightest;
+        display: flex;
+        padding: 0.5rem 1.5rem;
+
+        button{
+
+            background-color: $black-brightest;
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            padding: 0;
+
+            svg{
+                height: 1.5em;
+                width: 1.5em;
+            }
+
+            svg path{
+                fill: $white;
+            }   
+        }
+
+        input{
+            background-color: $black-brightest;
+            border: none;
+            font-family: "Roboto";
+            color: hsl(0, 0%, 100%);
+            outline: none;
+            padding: 0.3rem;
+            width: 100%;
+        }
+    }
+
+    .hamburguer__menu-categories .hamburguer__menu-category{
+
+        background-color: $black-brighter;
+        border-bottom: solid 1px $black-brightest;
+        cursor: pointer;
+        padding: 0.5rem 1.5rem;
+
+        &:hover{
+            background-color: $color-primary;
+        }
+
+        h3{
+            color: $white;
+            font-family: "Roboto";
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    .hamburguer__menu-social-netwoks{
+
+        background-color: $black-brighter;
+        padding: 0.5rem 1.5rem; 
+
+        svg{
+            height: 1.5rem;
+        }
+
+        svg path{
+            fill: $white;
+        }
+
+        ul li{
+            margin-right: 0.5rem;
+        }
+
+        ul li:first-child {
+            color: $white;
+            font-family: $font-stack-condensed;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    }
+
+    .hamburguer_menu-contact{
+        background-color: $black-brighter;
+        padding: 1rem 1.5rem; 
+
+        ul li{
+            color: $white;
+            font-family: $font-stack;
+        }
+
+        ul li:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+
+        ul li:not(:last-child):after {
+            content: "|";
+            padding-left: 0.5rem;
+            color: $grey-darkest;
+        }
+    }
+}

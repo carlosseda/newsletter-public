@@ -1,0 +1,26 @@
+/*Contents*/
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.inline li{
+    display: inline;
+}
+
+.row{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    width: 100%;
+}

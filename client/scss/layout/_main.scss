@@ -1,0 +1,31 @@
+.form-login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    login-form{
+        border: 0.2rem solid hsl(0, 0%, 100%);
+        border-radius: 5px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        padding: 2em;
+        width: 400px;
+    }
+}
+
+.main-element{
+    
+    margin-bottom: 2em;
+
+    &.subtitle{
+        background-color: hsl(207, 85%, 69%);
+        padding: 0.2em 0;
+        width: 100%;
+
+        h2{
+            text-align: center;
+        }
+    }
+}

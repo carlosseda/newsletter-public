@@ -1,0 +1,33 @@
+.menu{
+    background-color: $grey;
+    display: flex;
+    height: 3vh;
+    justify-content: space-between;
+    padding: 2vh 5%;
+    width: 90%;
+
+    @include respond-to("lg") {
+        padding: 1vh 20%;
+        width: 60%;
+    }
+
+    .menu__element svg{
+
+        height: 1.2rem;
+
+        @include respond-to("lg") {
+            height: 1.5rem;
+        }
+    }
+    
+    .menu__element h3{
+
+        font-size: 1.2rem;
+        font-family: $font-stack-condensed;
+
+        @include respond-to("lg") {
+            font-size: 1.3rem;
+        }
+    }    
+}
+

@@ -1,0 +1,24 @@
+//typography
+$font-stack: "Roboto", sans-serif;
+$font-stack-condensed: "Roboto Condensed";
+
+//colors
+
+$color-primary: hsl(0, 100%, 40%);
+$color-primary-darker: hsl(0, 100%, 30%);
+$color-primary-darkest: hsl(0, 100%, 20%);
+$color-secondary: hsl(47, 100%, 50%);
+$color-secondary-darker: hsl(47, 100%, 40%);
+$color-secondary-darkest: hsl(47, 100%, 30%);
+
+$grey: hsl(0, 0%, 90%);
+$grey-darker: hsl(0, 0%, 80%);
+$grey-darkest: hsl(0, 0%, 70%);
+$black: hsl(0, 0%, 0%);
+$black-brighter: hsl(0, 0%, 10%);
+$black-brightest: hsl(0, 0%, 20%);
+$white: hsl(0, 0%, 100%);
+
+
+//style
+$text-border: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
