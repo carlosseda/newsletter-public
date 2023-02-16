@@ -33,5 +33,15 @@ GOOGLE_CLIENT_SECRET=<br />
 GOOGLE_REFRESH_TOKEN=<br />
 JWT_SECRET=<br />
 
+- Dentro de /api/config/config.json pondremos también las credenciales de acceso a la base de datos
+
+  "development": { /<br />
+        "username": "root", <br />
+        "password": "password",<br />
+        "database": "detectives",<br />
+        "host": "127.0.0.1",<br />
+        "dialect": "mysql"<br />
+    },<br />
+
 - Dentro de la carpeta /api/src: npx sequelize db:migrate
 
